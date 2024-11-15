@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز الاندلس لصيانة الأجهزة المنزلية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- رأس الصفحة مع اسم مركز الاندلس بشكل بارز -->
+    <header>
+        <div class="logo">مركز الاندلس</div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عن المركز</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home" class="hero">
+        <h1>مركز الاندلس لصيانة الأجهزة المنزلية</h1>
+        <p>نقدم أفضل خدمات الصيانة للأجهزة المنزلية لضمان راحتكم ورضاكم.</p>
+        <a href="#contact" class="btn">احجز الآن</a>
+    </section>
+
+    <!-- عن المركز -->
+    <section id="about" class="about">
+        <h2>عن المركز</h2>
+        <p>يقدم مركز الاندلس خبرة طويلة في صيانة الأجهزة المنزلية مع فريق محترف وضمان على الخدمات المقدمة.</p>
+    </section>
+
+    <!-- الخدمات -->
+    <section id="services" class="services">
+        <h2>خدماتنا</h2>
+        <div class="service-card">
+            <img src="washing_machine.jpg" alt="صيانة الغسالات">
+            <h3>صيانة الغسالات</h3>
+            <p>نقوم بإصلاح جميع أعطال الغسالات بمختلف أنواعها.</p>
+        </div>
+        <div class="service-card">
+            <img src="refrigerator.jpg" alt="صيانة الثلاجات">
+            <h3>صيانة الثلاجات</h3>
+            <p>خدمات إصلاح شاملة لجميع أنواع الثلاجات.</p>
+        </div>
+        <div class="service-card">
+            <img src="air_conditioner.jpg" alt="صيانة المكيفات">
+            <h3>صيانة المكيفات</h3>
+            <p>صيانة احترافية للمكيفات المنزلية بأعلى كفاءة.</p>
+        </div>
+        <div class="service-card">
+            <img src="microwave.jpg" alt="صيانة الميكروويف">
+            <h3>صيانة الميكروويف</h3>
+            <p>إصلاح وصيانة أجهزة الميكروويف المختلفة.</p>
+        </div>
+        <div class="service-card">
+            <img src="vacuum_cleaner.jpg" alt="صيانة المكانس">
+            <h3>صيانة المكانس</h3>
+            <p>صيانة متكاملة للمكانس الكهربائية بكافة أنواعها.</p>
+        </div>
+    </section>
+
+    <!-- اتصل بنا -->
+    <section id="contact" class="contact">
+        <h2>اتصل بنا</h2>
+        <p>للتواصل: 01116470923</p>
+        <form>
+            <input type="text" placeholder="الاسم" required>
+            <input type="tel" placeholder="رقم الهاتف" required>
+            <textarea placeholder="وصف المشكلة"></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>© 2024 مركز الاندلس لصيانة الأجهزة المنزلية</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contactForm = document.querySelector(".contact form");
+            contactForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+                alert("تم إرسال طلبك بنجاح! سنتواصل معك قريبًا.");
+                contactForm.reset();
+            });
+        });
+    </script>
+
+</body>
+</html>
